@@ -49,15 +49,6 @@ function viewCart() {
   }
 
 
-
-// cart = [
-//   {itemName: 'slippers',itemPrice: 16},
-//   {itemName: 'clogs',itemPrice: 12},
-//   {itemName: 'sneakers',itemPrice: 12},
-//   {itemName: 'frogs',itemPrice: 1},
-//   {itemName: 'ghosts',itemPrice: 19},
-// ]
-
 function total() {
   let priceArray = cart.map(a => a.itemPrice);
   var sum = priceArray.reduce((a, b) => a + b, 0);
@@ -84,5 +75,4 @@ function placeOrder(cardNumber) {
       cart = []
       return `Your total cost is $${t}, which will be charged to the card ${cardNumber}.`
     }
-
   }
